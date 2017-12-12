@@ -6,6 +6,8 @@ To run this app you need to create a virtual environment and install requirement
 
 [Install Redis in your system](https://redis.io/download)
 
+[Install PostgreSQL and configure your database](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-16-04)
+
 >cd "Your Project Directory"
 
 >virtualenv venv
@@ -24,3 +26,5 @@ To run this app you need to create a virtual environment and install requirement
 Make sure to modify MEDIA_ROOT path in settings.py:
 
 MEDIA_ROOT = '/YOUR PROJECT DIRECTORY/private_message_app/media'
+
+Also modify your database credetials for PostgreSQL.

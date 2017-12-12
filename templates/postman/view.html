@@ -36,7 +36,7 @@
             {% endif %}
             </span>
             {% if reply_to_pk %}
-            <button><a href="{% url 'postman:reply' reply_to_pk %}?next={{ next_url|urlencode }}">{% trans "Reply" %}</a></button>
+            <!-- <button><a href="{% url 'postman:reply' reply_to_pk %}?next={{ next_url|urlencode }}">{% trans "Reply" %}</a></button> -->
             {% endif %}
             </form>
             {% if reply_to_pk %}<hr />
