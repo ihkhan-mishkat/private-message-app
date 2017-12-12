@@ -4,11 +4,11 @@
 __pycache__/
 *.py[cod]
 =======
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
 
 # C extensions
 *.so
@@ -21,19 +21,17 @@ develop-eggs/
 dist/
 downloads/
 eggs/
-<<<<<<< HEAD
 =======
+
 .eggs/
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
 lib/
 lib64/
 parts/
 sdist/
 var/
-<<<<<<< HEAD
 =======
+
 wheels/
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
 *.egg-info/
 .installed.cfg
 *.egg
@@ -52,18 +50,17 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .coverage
-<<<<<<< HEAD
 .cache
 nosetests.xml
 coverage.xml
 =======
+
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
 
 # Translations
 *.mo
@@ -71,8 +68,8 @@ coverage.xml
 
 # Django stuff:
 *.log
-<<<<<<< HEAD
 =======
+
 local_settings.py
 
 # Flask stuff:
@@ -81,7 +78,6 @@ instance/
 
 # Scrapy stuff:
 .scrapy
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
 
 # Sphinx documentation
 docs/_build/
@@ -89,10 +85,10 @@ docs/_build/
 # PyBuilder
 target/
 
-<<<<<<< HEAD
 db.sqlite3
 /.dir-locals.el
 =======
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -127,4 +123,3 @@ vscode/
 
 # mypy
 .mypy_cache/
->>>>>>> 9b492ee9efcfbb2ab57bfd5a9cabdbc08190531e
