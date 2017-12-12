@@ -4,6 +4,8 @@ This is a user to user private messaging app developed with Django, with the hel
 
 To run this app you need to create a virtual environment and install requirements using pip as follows:
 
+[Install Redis in your system](https://redis.io/download)
+
 >cd "Your Project Directory"
 
 >virtualenv venv

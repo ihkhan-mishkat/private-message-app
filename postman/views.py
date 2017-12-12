@@ -38,6 +38,7 @@ from .forms import WriteForm, AnonymousWriteForm, QuickReplyForm, FullReplyForm
 from .models import Message, get_order_by, File
 from .utils import format_subject, format_body
 from filetransfers.api import serve_file
+from django.core.cache import cache
 
 login_required_m = method_decorator(login_required)
 csrf_protect_m = method_decorator(csrf_protect)
@@ -196,6 +197,7 @@ class ComposeMixin(NamespaceMixin, object):
         return kwargs
 
     def get_success_url(self):
+        cache.delete_pattern("views*")
         return self.request.GET.get('next') or self.success_url or _get_referer(self.request) or 'postman:inbox'
 
     def form_valid(self, form):
@@ -411,6 +413,7 @@ class UpdateMessageMixin(object):
         return super(UpdateMessageMixin, self).dispatch(*args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        cache.delete_pattern("views*")
         next_url = _get_referer(request) or 'postman:inbox'
         pks = request.POST.getlist('pks')
         tpks = request.POST.getlist('tpks')
